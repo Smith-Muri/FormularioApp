@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export function Registro() {
   const [formulario, setFormulario] = useState({
@@ -17,43 +18,57 @@ export function Registro() {
   };
 
   return (
-    <section className="container min-vh-100 d-flex align-items-center justify-content-center">
+    <main className="form-page">
+      <section className="container form-layout">
       <section className="row w-100 justify-content-center">
-        <section className="col-12 col-md-8 col-lg-6">
-          <h1 className="text-center">Formulario de Registro</h1>
-          <hr />
+        <section className="col-12 col-md-8 col-lg-6 form-column">
+          <Link to="/" className="back-link">← Volver al inicio</Link>
+          <p className="eyebrow form-eyebrow">Nuevo perfil</p>
+          <h1>Formulario de registro</h1>
+          <p className="form-intro">Completa tus datos para comenzar a gestionar tus espacios.</p>
 
-          <form className="border rounded p-5 shadow bg-white">
+          <form className="form-panel">
+            <div className="form-field">
+              <label htmlFor="nombre">Nombre completo</label>
             <input
               type="text"
-              className="form-control mb-3"
+              className="form-control"
               placeholder="Smith Murillo"
               id="nombre"
               name="nombre"
               value={formulario.nombre}
               onChange={manejarCambios}
             />
+            </div>
 
+            <div className="form-field">
+              <label htmlFor="email">Correo electrónico</label>
             <input
               type="email"
-              className="form-control mb-3"
+              className="form-control"
               placeholder="correo@ejemplo.com"
               name="email"
               value={formulario.email}
               onChange={manejarCambios}
             />
+            </div>
 
+            <div className="form-field">
+              <label htmlFor="password">Contraseña</label>
             <input
               type="password"
-              className="form-control mb-3"
+              className="form-control"
               placeholder="Contraseña"
               name="password"
               value={formulario.password}
               onChange={manejarCambios}
             />
+            </div>
 
+            <div className="form-field">
+              <label htmlFor="rol">Tipo de usuario</label>
             <select
-              className="form-select mb-3"
+              className="form-select"
               name="rol"
               value={formulario.rol}
               onChange={manejarCambios}
@@ -62,13 +77,13 @@ export function Registro() {
               <option value="administrador">Administrador</option>
               <option value="inquilino">Inquilino</option>
             </select>
+            </div>
 
-            <button type="submit" className="btn btn-primary w-100">
-              Enviar
-            </button>
+            <button type="submit" className="btn form-submit">Crear perfil <span aria-hidden="true">↗</span></button>
           </form>
         </section>
       </section>
-    </section>
+      </section>
+    </main>
   );
 }
