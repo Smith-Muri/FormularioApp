@@ -19,8 +19,16 @@ export function Home() {
 
             <section className="container home-actions">
                 <div className="col-12 col-md-5">
+                    <article className="action-card action-card-registration">
+                        <div className="action-card-top"><span className="action-number">01</span><span className="action-mark">◎</span></div>
+                        <h2>Crear perfil</h2>
+                        <p>Regístrate para comenzar a gestionar espacios y reservas.</p>
+                        <Link to="/registro" className="action-link">Crear perfil <span aria-hidden="true">↗</span></Link>
+                    </article>
+                </div>
+                <div className="col-12 col-md-5">
                     <article className="action-card action-card-space">
-                        <div className="action-card-top"><span className="action-number">01</span><span className="action-mark">+</span></div>
+                        <div className="action-card-top"><span className="action-number">02</span><span className="action-mark">+</span></div>
                         <h2>Registrar espacio</h2>
                         <p>Agrega un espacio con su descripción, capacidad y fotografía.</p>
                         <Link to="/espacios" className="action-link">Crear espacio <span aria-hidden="true">↗</span></Link>
@@ -28,7 +36,7 @@ export function Home() {
                 </div>
                 <div className="col-12 col-md-5">
                     <article className="action-card action-card-reservation">
-                        <div className="action-card-top"><span className="action-number">02</span><span className="action-mark">◷</span></div>
+                        <div className="action-card-top"><span className="action-number">03</span><span className="action-mark">◷</span></div>
                         <h2>Hacer una reserva</h2>
                         <p>Programa una reserva indicando la fecha, hora y duración.</p>
                         <Link to="/reservas" className="action-link">Nueva reserva <span aria-hidden="true">↗</span></Link>

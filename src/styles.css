@@ -41,6 +41,7 @@ h1, h2, p { margin-top: 0; }
 .action-card { flex: 1 1 20rem; min-height: 18rem; padding: 2rem; border: 1px solid var(--line); border-radius: 1.25rem; background: var(--white); box-shadow: 0 .75rem 2.5rem rgba(23, 42, 58, .06); transition: transform .2s ease, box-shadow .2s ease; animation: rise-in .7s ease both; }
 .action-card:hover { transform: translateY(-.35rem); box-shadow: 0 1.25rem 3rem rgba(23, 42, 58, .12); }
 .action-card-reservation { animation-delay: .12s; background: var(--ink); color: var(--white); }
+.action-card-registration { animation-delay: .06s; background: #e6f1ee; }
 .action-card-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 3rem; }
 .action-number { color: var(--teal); font-size: .8rem; font-weight: 700; letter-spacing: .12em; }
 .action-card-reservation .action-number { color: #f5b6a5; }
@@ -68,6 +69,7 @@ h1, h2, p { margin-top: 0; }
 .form-field label span { color: var(--muted); font-weight: 400; }
 .form-control, .form-select { min-height: 3.1rem; border: 1px solid var(--line); border-radius: .6rem; color: var(--ink); background-color: #fbfcfb; }
 .form-control:focus, .form-select:focus { border-color: var(--teal); box-shadow: 0 0 0 .2rem rgba(31, 138, 135, .14); }
+.form-control.is-invalid, .form-select.is-invalid { border-color: var(--coral-dark); background-color: #fff4f2; box-shadow: 0 0 0 .15rem rgba(199, 80, 69, .12); }
 .form-submit { width: 100%; min-height: 3.25rem; margin-top: .5rem; border: 0; border-radius: .6rem; background: var(--coral); color: var(--white); font-weight: 700; transition: background .2s ease, transform .2s ease; }
 .form-submit:hover { background: var(--coral-dark); color: var(--white); transform: translateY(-.1rem); }
 .alert-success { border: 0; border-radius: .6rem; color: #17645d; background: #d9efea; }
