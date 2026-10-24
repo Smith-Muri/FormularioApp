@@ -10,6 +10,7 @@ export function Home() {
                     <p className="home-lead">
                         Administra los espacios disponibles y crea reservas desde un solo lugar.
                     </p>
+                    <Link to="/iniciar-sesion" className="action-link">Iniciar sesión <span aria-hidden="true">↗</span></Link>
                     <div className="home-stat-row" aria-label="Resumen de la plataforma">
                         <span><strong>02</strong> gestiones rápidas</span>
                         <span><strong>01</strong> lugar para organizarlo todo</span>
@@ -31,7 +32,7 @@ export function Home() {
                         <div className="action-card-top"><span className="action-number">02</span><span className="action-mark">+</span></div>
                         <h2>Registrar espacio</h2>
                         <p>Agrega un espacio con su descripción, capacidad y fotografía.</p>
-                        <Link to="/espacios" className="action-link">Crear espacio <span aria-hidden="true">↗</span></Link>
+                        <Link to="/espacios" className="action-link">Ver espacios <span aria-hidden="true">↗</span></Link>
                     </article>
                 </div>
                 <div className="col-12 col-md-5">
